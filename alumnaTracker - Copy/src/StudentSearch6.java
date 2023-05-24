@@ -1,3 +1,7 @@
+
+import java.util.Arrays;
+import java.util.List;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -28,9 +32,7 @@ public class StudentSearch6 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        skillsText = new javax.swing.JTextField();
         next6 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         home6 = new javax.swing.JButton();
@@ -54,33 +56,20 @@ public class StudentSearch6 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel1.setText("Batangas State University - Alangilan Campus");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(316, 16, 250, 17);
+        jLabel1.setBounds(316, 16, 250, 19);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Enter your SKILLS for JOB RECOMMENDATION");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(60, 110, 360, 20);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        skillsText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                skillsTextActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(90, 320, 620, 100);
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Based on your SKILLS, you have the potential to be  ");
-        jPanel2.add(jLabel5);
-        jLabel5.setBounds(60, 290, 390, 17);
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jTextField2);
-        jTextField2.setBounds(90, 140, 620, 100);
+        jPanel2.add(skillsText);
+        skillsText.setBounds(90, 140, 620, 100);
 
         next6.setBackground(new java.awt.Color(153, 153, 153));
         next6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -91,7 +80,7 @@ public class StudentSearch6 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(next6);
-        next6.setBounds(1070, 570, 72, 20);
+        next6.setBounds(973, 480, 120, 60);
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 1170, 610));
 
@@ -158,7 +147,7 @@ public class StudentSearch6 extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(jLabel17)))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,7 +158,7 @@ public class StudentSearch6 extends javax.swing.JFrame {
                 .addComponent(update6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(logout6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 310, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 302, Short.MAX_VALUE)
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel16)
@@ -200,7 +189,7 @@ public class StudentSearch6 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 100));
@@ -236,7 +225,7 @@ public class StudentSearch6 extends javax.swing.JFrame {
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1370, 90));
 
-        setSize(new java.awt.Dimension(1386, 708));
+        setSize(new java.awt.Dimension(1386, 748));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -254,16 +243,17 @@ public class StudentSearch6 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_logout6ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void skillsTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skillsTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_skillsTextActionPerformed
 
     private void next6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next6ActionPerformed
-        StudentJobDescrip7 form = new StudentJobDescrip7 ();
+        String x = skillsText.getText();
+         String[] itemsArray = x.replace(" ", "").split(",");
+
+        // Convert the array to a list
+        List<String> itemsList = Arrays.asList(itemsArray);
+        StudentJobDescrip7 form = new StudentJobDescrip7 (itemsList);
         form.show();
         
         dispose();
@@ -321,15 +311,13 @@ public class StudentSearch6 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JButton logout6;
     private javax.swing.JButton next6;
+    private javax.swing.JTextField skillsText;
     private javax.swing.JButton update6;
     // End of variables declaration//GEN-END:variables
 }

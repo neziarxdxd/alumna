@@ -586,7 +586,11 @@ public class StudentProfile_5 extends javax.swing.JFrame {
              int rowsAffected = statement.executeUpdate();
 
             if (rowsAffected > 0) {
+                StudentSearch6 studentSearch6 = new StudentSearch6();
+                studentSearch6.show();
+                
                 System.out.println("User data updated successfully.");
+                dispose();
             } else {
                 System.out.println("User not found or no changes made.");
             }

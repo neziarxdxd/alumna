@@ -1,3 +1,7 @@
+
+import java.util.List;
+import java.util.*;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -12,9 +16,75 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
     /**
      * Creates new form StudentJobDescrip7
      */
-    public StudentJobDescrip7() {
+     List<String> inputList;
+    public StudentJobDescrip7(List<String> inputList) {
+        this.inputList= inputList;
+         Map<List<String>, String> skillsToJobs = new HashMap<>();
+
+        // Add mappings for skills and corresponding job titles
+        skillsToJobs.put(Arrays.asList("html", "css", "javascript"), "Web Developer");
+        skillsToJobs.put(Arrays.asList("java", "python", "c++"), "Software Developer");
+        skillsToJobs.put(Arrays.asList("networking", "security"), "Network Administrator");
+        skillsToJobs.put(Arrays.asList("math", "analysis"), "Accountant");
+        skillsToJobs.put(Arrays.asList("problem-solving", "design"), "Engineer");
+        // Add more job titles and skills here...
+
+        // Add mappings for job responsibilities
+        Map<String, List<String>> jobToResponsibilities = new HashMap<>();
+        jobToResponsibilities.put("Web Developer", Arrays.asList(
+                "Designing and building responsive websites",
+                "Writing clean and maintainable code",
+                "Implementing user interfaces"));
+
+        jobToResponsibilities.put("Software Developer", Arrays.asList(
+                "Developing software applications",
+                "Testing and debugging code",
+                "Collaborating with cross-functional teams"));
+
+        jobToResponsibilities.put("Network Administrator", Arrays.asList(
+                "Setting up and maintaining network infrastructure",
+                "Monitoring network performance",
+                "Implementing security measures"));
+
+        jobToResponsibilities.put("Accountant", Arrays.asList(
+                "Preparing and analyzing financial statements",
+                "Managing accounts payable and accounts receivable",
+                "Ensuring compliance with tax regulations"));
+
+        jobToResponsibilities.put("Engineer", Arrays.asList(
+                "Designing and implementing engineering solutions",
+                "Conducting experiments and analyzing data",
+                "Collaborating with multidisciplinary teams"));
+         String matchedJob = "";
+        for (Map.Entry<List<String>, String> entry : skillsToJobs.entrySet()) {
+            if (entry.getKey().containsAll(this.inputList)) {
+                matchedJob = entry.getValue();
+                break;
+            }
+        }
+        String listOfResponsibility  = "";
+        // Display the matched job and its responsibilities
+        if (!matchedJob.isEmpty()) {
+            listOfResponsibility = listOfResponsibility +  matchedJob+"\n";
+           
+            listOfResponsibility = listOfResponsibility + "Responsibilities:\n";
+            List<String> responsibilities = jobToResponsibilities.get(matchedJob);
+            for (String responsibility : responsibilities) {
+                listOfResponsibility = listOfResponsibility+"- " + responsibility + "\n";
+            }
+        } else {
+            listOfResponsibility = ("No matching job title found for the given skills.");
+        }
+//        descriptionText.setText("FDFF");
         initComponents();
+        setTex(listOfResponsibility, matchedJob);
     }
+    
+    public void setTex(String list, String match){
+        potentialText.setText(match);
+        descriptionText.setText(list);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,11 +97,11 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        descriptionText = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         exit7 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        potentialText = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         home7 = new javax.swing.JButton();
         update7 = new javax.swing.JButton();
@@ -54,15 +124,15 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel1.setText("Batangas State University - Alangilan Campus");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(316, 16, 250, 17);
+        jLabel1.setBounds(316, 16, 250, 19);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        descriptionText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                descriptionTextActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(80, 290, 620, 150);
+        jPanel2.add(descriptionText);
+        descriptionText.setBounds(80, 290, 620, 150);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("JOB DESCRIPTION");
@@ -78,20 +148,20 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(exit7);
-        exit7.setBounds(1070, 560, 72, 20);
+        exit7.setBounds(1070, 560, 59, 20);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setText("Based on your SKILLS, you have the potential to be  ");
         jPanel2.add(jLabel6);
         jLabel6.setBounds(50, 70, 390, 17);
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        potentialText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                potentialTextActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField2);
-        jTextField2.setBounds(80, 110, 620, 100);
+        jPanel2.add(potentialText);
+        potentialText.setBounds(80, 110, 620, 100);
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 1170, 610));
 
@@ -158,7 +228,7 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(jLabel17)))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,9 +310,9 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void descriptionTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_descriptionTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_descriptionTextActionPerformed
 
     private void exit7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exit7ActionPerformed
         StudentSearch6 form = new StudentSearch6();
@@ -265,9 +335,9 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_logout7ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void potentialTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_potentialTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_potentialTextActionPerformed
 
     private void home7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_home7ActionPerformed
         Welcome_1 form = new Welcome_1 ();
@@ -306,12 +376,13 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new StudentJobDescrip7().setVisible(true);
+                new StudentJobDescrip7(Arrays.asList("")).setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField descriptionText;
     private javax.swing.JButton exit7;
     private javax.swing.JButton home7;
     private javax.swing.JLabel jLabel1;
@@ -327,9 +398,8 @@ public class StudentJobDescrip7 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JButton logout7;
+    private javax.swing.JTextField potentialText;
     private javax.swing.JButton update7;
     // End of variables declaration//GEN-END:variables
 }
