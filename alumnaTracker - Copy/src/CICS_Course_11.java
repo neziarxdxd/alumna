@@ -244,7 +244,7 @@ public class CICS_Course_11 extends javax.swing.JFrame {
     }//GEN-LAST:event_exit7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       StudentINFOWORK studentINFOWORK = new StudentINFOWORK();
+       listOfStudents studentINFOWORK = new listOfStudents();
        studentINFOWORK.show();
        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

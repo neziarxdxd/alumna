@@ -29,7 +29,7 @@ public class listOfStudents extends javax.swing.JFrame {
 
         String course = "Computer Science";
         String selectQuery = "SELECT * FROM tbl_alumna WHERE course = ?";
-
+DefaultListModel listModel = new DefaultListModel();
         try {
             // Create database connection
             Connection connection = DriverManager.getConnection(url, username, password);
@@ -44,7 +44,7 @@ public class listOfStudents extends javax.swing.JFrame {
             // Execute the select statement
             ResultSet resultSet = statement.executeQuery();
            ArrayList<String> studentNameList = new ArrayList<>();
-DefaultListModel listModel = new DefaultListModel();
+
             
 if (!resultSet.isBeforeFirst()) {
     System.out.println("No data found.");
@@ -54,9 +54,7 @@ while (resultSet.next()) {
                 listModel.addElement(name);
             }
             
-            listVIEW.setModel(listModel);
-            listVIEW.setVisible(rootPaneCheckingEnabled);
-            
+       
 
             // Close the result set, statement, and connection
             resultSet.close();
@@ -67,6 +65,9 @@ while (resultSet.next()) {
             e.printStackTrace();
         }
         initComponents();
+             listVIEW.setModel(listModel);
+            listVIEW.setVisible(rootPaneCheckingEnabled);
+            
     }
     
     public void displayData(DefaultListModel listOfNamesStudents){
@@ -157,6 +158,11 @@ while (resultSet.next()) {
             }
         });
 
+        listVIEW.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                listVIEWMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(listVIEW);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -209,6 +215,13 @@ while (resultSet.next()) {
 
         dispose();
     }//GEN-LAST:event_exit2ActionPerformed
+
+    private void listVIEWMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listVIEWMouseClicked
+        // TODO add your handling code here:
+        StudentINFOWORK studentINFOWORK = new StudentINFOWORK();
+        studentINFOWORK.show();
+        disable();
+    }//GEN-LAST:event_listVIEWMouseClicked
 
     /**
      * @param args the command line arguments
