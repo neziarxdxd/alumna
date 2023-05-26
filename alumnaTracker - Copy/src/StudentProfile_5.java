@@ -61,8 +61,6 @@ public class StudentProfile_5 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -100,7 +98,7 @@ public class StudentProfile_5 extends javax.swing.JFrame {
         exit5.setBackground(new java.awt.Color(153, 153, 153));
         exit5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         exit5.setText("EXIT");
-        exit5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        exit5.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         exit5.setPreferredSize(new java.awt.Dimension(70, 20));
         exit5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,7 +107,7 @@ public class StudentProfile_5 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
-        jLabel1.setText("SET UP YOUR PROFILE");
+        jLabel1.setText("STUDENT PROFILE");
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel2.setText("PERSONAL INFORMATION");
@@ -200,7 +198,7 @@ public class StudentProfile_5 extends javax.swing.JFrame {
         save6.setBackground(new java.awt.Color(153, 153, 153));
         save6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         save6.setText("SAVE");
-        save6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        save6.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         save6.setPreferredSize(new java.awt.Dimension(70, 20));
         save6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -321,14 +319,14 @@ public class StudentProfile_5 extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ALUMNA TRACKER");
+        jLabel3.setText("GRADCONNECT");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(646, Short.MAX_VALUE)
+                .addContainerGap(675, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(540, 540, 540))
         );
@@ -344,31 +342,15 @@ public class StudentProfile_5 extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(182, 188, 210));
 
-        jLabel13.setText("jLabel13");
-
-        jLabel14.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(53, 61, 99));
-        jLabel14.setText("SURNAME, FIRST");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel13)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel14)
-                .addContainerGap(1195, Short.MAX_VALUE))
+            .addGap(0, 1370, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(jLabel14))
-                .addContainerGap())
+            .addGap(0, 40, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1370, 40));
@@ -605,6 +587,11 @@ public class StudentProfile_5 extends javax.swing.JFrame {
             e.printStackTrace();
         }
        
+        
+        StudentSearch6 form = new StudentSearch6();
+        form.show();
+        
+        dispose();
     }//GEN-LAST:event_save6ActionPerformed
 
     private void addressTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressTextActionPerformed
@@ -663,8 +650,6 @@ public class StudentProfile_5 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;

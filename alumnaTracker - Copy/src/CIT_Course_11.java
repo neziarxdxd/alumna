@@ -27,12 +27,8 @@ public class CIT_Course_11 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         home11 = new javax.swing.JButton();
-        update11 = new javax.swing.JButton();
         view11 = new javax.swing.JButton();
         logout11 = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
@@ -62,14 +58,14 @@ public class CIT_Course_11 extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ALUMNA TRACKER");
+        jLabel3.setText("GRADCONNECT");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(551, Short.MAX_VALUE)
+                .addContainerGap(580, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(540, 540, 540))
         );
@@ -78,41 +74,10 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1275, 50));
-
-        jPanel3.setBackground(new java.awt.Color(182, 188, 210));
-
-        jLabel13.setText("jLabel13");
-
-        jLabel14.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(53, 61, 99));
-        jLabel14.setText("SURNAME, FIRST");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel13)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel14)
-                .addContainerGap(1100, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(jLabel14))
-                .addContainerGap())
-        );
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1275, 40));
 
         jPanel4.setBackground(new java.awt.Color(53, 61, 99));
 
@@ -123,16 +88,6 @@ public class CIT_Course_11 extends javax.swing.JFrame {
         home11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 home11ActionPerformed(evt);
-            }
-        });
-
-        update11.setBackground(new java.awt.Color(53, 61, 99));
-        update11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        update11.setForeground(new java.awt.Color(182, 188, 210));
-        update11.setText("UPDATE");
-        update11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                update11ActionPerformed(evt);
             }
         });
 
@@ -173,7 +128,6 @@ public class CIT_Course_11 extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(home11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(update11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(view11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(logout11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
@@ -188,7 +142,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(jLabel17)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,10 +152,8 @@ public class CIT_Course_11 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(view11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(update11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(logout11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 238, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 279, Short.MAX_VALUE)
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel16)
@@ -218,7 +170,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel1.setText("Batangas State University - Alangilan Campus");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(316, 16, 250, 19);
+        jLabel1.setBounds(316, 16, 250, 17);
 
         jButton1.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton1.setText("Major in Instrumentation and Control Technology");
@@ -228,7 +180,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton1);
-        jButton1.setBounds(440, 200, 310, 27);
+        jButton1.setBounds(440, 200, 310, 25);
 
         jButton2.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton2.setText("Bachelor of Science in Industrial Technology");
@@ -238,27 +190,27 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(280, 100, 280, 27);
+        jButton2.setBounds(280, 100, 280, 25);
 
         jLabel2.setFont(new java.awt.Font("Arial Narrow", 1, 20)); // NOI18N
         jLabel2.setText("COLLEGE OF INDUSTRIAL TECHNOLOGY");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(250, 40, 350, 26);
+        jLabel2.setBounds(250, 40, 350, 24);
 
         jButton3.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton3.setText("Major in Automotive Technology");
         jPanel2.add(jButton3);
-        jButton3.setBounds(90, 170, 310, 27);
+        jButton3.setBounds(90, 170, 310, 25);
 
         jButton4.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton4.setText("Major in Civil Technology");
         jPanel2.add(jButton4);
-        jButton4.setBounds(90, 200, 310, 27);
+        jButton4.setBounds(90, 200, 310, 25);
 
         jButton5.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton5.setText("Major in Computer Technology");
         jPanel2.add(jButton5);
-        jButton5.setBounds(90, 230, 310, 27);
+        jButton5.setBounds(90, 230, 310, 25);
 
         jButton6.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton6.setText("Major in Drafting Technology");
@@ -268,7 +220,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton6);
-        jButton6.setBounds(90, 260, 310, 27);
+        jButton6.setBounds(90, 260, 310, 25);
 
         jButton7.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton7.setText("Major in Electrical Technology");
@@ -278,7 +230,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton7);
-        jButton7.setBounds(90, 290, 310, 27);
+        jButton7.setBounds(90, 290, 310, 25);
 
         jButton8.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton8.setText("Major in Electronics Technology");
@@ -288,7 +240,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton8);
-        jButton8.setBounds(90, 320, 310, 27);
+        jButton8.setBounds(90, 320, 310, 25);
 
         jButton9.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton9.setText("Major in Welding and Fabrication Technology");
@@ -298,7 +250,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton9);
-        jButton9.setBounds(440, 290, 310, 27);
+        jButton9.setBounds(440, 290, 310, 25);
 
         jButton10.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton10.setText("Major in Food Technology");
@@ -308,7 +260,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton10);
-        jButton10.setBounds(440, 170, 310, 27);
+        jButton10.setBounds(440, 170, 310, 25);
 
         jButton11.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton11.setText("Major in Mechanical Technology");
@@ -318,7 +270,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton11);
-        jButton11.setBounds(440, 230, 310, 27);
+        jButton11.setBounds(440, 230, 310, 25);
 
         jButton12.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton12.setText("Major in Mechatronics Technology");
@@ -328,7 +280,7 @@ public class CIT_Course_11 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton12);
-        jButton12.setBounds(440, 260, 310, 27);
+        jButton12.setBounds(440, 260, 310, 25);
 
         exit7.setBackground(new java.awt.Color(153, 153, 153));
         exit7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -353,10 +305,6 @@ public class CIT_Course_11 extends javax.swing.JFrame {
 
         dispose();
     }//GEN-LAST:event_home11ActionPerformed
-
-    private void update11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_update11ActionPerformed
-
-    }//GEN-LAST:event_update11ActionPerformed
 
     private void view11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_view11ActionPerformed
         FacultyView_10 form = new FacultyView_10 ();
@@ -466,8 +414,6 @@ public class CIT_Course_11 extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -475,10 +421,8 @@ public class CIT_Course_11 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JButton logout11;
-    private javax.swing.JButton update11;
     private javax.swing.JButton view11;
     // End of variables declaration//GEN-END:variables
 }

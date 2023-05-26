@@ -57,19 +57,19 @@ public class Welcome_1 extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Batangas State University Alangilan ");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(500, 30, 301, 25);
+        jLabel2.setBounds(500, 30, 301, 26);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Alumna Tracker");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(570, 120, 132, 25);
+        jLabel1.setBounds(570, 120, 132, 26);
 
         jLabel3.setFont(new java.awt.Font("Gill Sans MT", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ALUMNA TRACKER");
+        jLabel3.setText("   GRADCONNECT");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(390, 60, 500, 57);
+        jLabel3.setBounds(400, 60, 500, 57);
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 170));
         jPanel1.getAccessibleContext().setAccessibleDescription("");

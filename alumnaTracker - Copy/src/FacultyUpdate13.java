@@ -55,8 +55,6 @@ public class FacultyUpdate13 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -68,7 +66,7 @@ public class FacultyUpdate13 extends javax.swing.JFrame {
         save13.setBackground(new java.awt.Color(153, 153, 153));
         save13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         save13.setText("SAVE");
-        save13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        save13.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         save13.setPreferredSize(new java.awt.Dimension(70, 20));
         save13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -369,31 +367,15 @@ public class FacultyUpdate13 extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(182, 188, 210));
 
-        jLabel13.setText("jLabel13");
-
-        jLabel14.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(53, 61, 99));
-        jLabel14.setText("SURNAME, FIRST");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel13)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel14)
-                .addContainerGap(1195, Short.MAX_VALUE))
+            .addGap(0, 1370, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(jLabel14))
-                .addContainerGap())
+            .addGap(0, 40, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1370, 40));
@@ -532,8 +514,6 @@ public class FacultyUpdate13 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;

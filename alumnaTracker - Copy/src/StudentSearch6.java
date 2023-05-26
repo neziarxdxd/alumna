@@ -30,7 +30,6 @@ public class StudentSearch6 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         skillsText = new javax.swing.JTextField();
         next6 = new javax.swing.JButton();
@@ -52,11 +51,6 @@ public class StudentSearch6 extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(246, 246, 232));
         jPanel2.setLayout(null);
-
-        jLabel1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        jLabel1.setText("Batangas State University - Alangilan Campus");
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(316, 16, 250, 19);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Enter your SKILLS for JOB RECOMMENDATION");
@@ -173,14 +167,14 @@ public class StudentSearch6 extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ALUMNA TRACKER");
+        jLabel3.setText("GRADCONNECT");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(646, Short.MAX_VALUE)
+                .addContainerGap(675, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(540, 540, 540))
         );
@@ -303,7 +297,6 @@ public class StudentSearch6 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton home6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
